@@ -21,10 +21,13 @@
 		//message  消息内容
 		var initInfo = initSDK({
 			container: "callContent",//容器id，如果容器id为空，那么不会显示界面
-			userid: '100001',//用户标识，必传，坐席号
 			siptype: 2,//启动的SIP类型，0是initSDK方法会返回sip信息（webrtc），1是启动软件SIP，2是启动网页SIP
-			appkey: '2aea3af8-4d52-4f37-accf-edb2ac648a01',//在商户的系统设置下的接口配置页面，点击重置按钮，或获取到token
-			secret: 'a8b2914aa528404a84fd2939ddc62b5e',//在商户的系统设置下的接口配置页面 secret
+			//userid: '100001',//用户标识，必传，坐席号			
+			//appkey: '2aea3af8-4d52-4f37-accf-edb2ac648a01',//在商户的系统设置下的接口配置页面，点击重置按钮，或获取到token
+			//secret: 'a8b2914aa528404a84fd2939ddc62b5e',//在商户的系统设置下的接口配置页面 secret
+			userid: '2060001',//用户标识，必传，坐席号			
+			appkey: '18700253-fcc2-4a82-9feb-f891d3c9c6cd',//在商户的系统设置下的接口配置页面，点击重置按钮，或获取到token
+			secret: '33885134b255496394ee0cd221cca660',//在商户的系统设置下的接口配置页面 secret
 			ruleid: "",//指定呼叫时执行的任务id，没传任务id，则执行任务列表中的第一个任务
 			cdrHandler: cdrInfoHandle//处理返回的cdr信息的方法
 		});
